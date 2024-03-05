@@ -1,10 +1,10 @@
-
+import { LoginBtn, RegistrationBtn, Wrapper } from "./AuthMenu.styled"
 
 export const AuthMenu = () => {
     return (
-        <div>
-            <button type="button">Log In</button>
-            <button type="button">Registration</button>
-        </div>
+        <Wrapper>
+            <LoginBtn type="button">Log In</LoginBtn>
+            <RegistrationBtn type="button">Registration</RegistrationBtn>
+        </Wrapper>
     )
 }

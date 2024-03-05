@@ -1,14 +1,17 @@
 import sprite from "../../assets/icons/sprite.svg"
+import { Btn, IconUser, Name, WrappName, Wrapper } from "./UserMenu.styled"
 
 export const UserMenu = () => {
     const name = "Ilona"
     return (
-        <div>
-            <svg width={40} height={40}>
-                <use href={`${sprite}#icon-user`} />
-            </svg>
-            <p>{name}</p>
-            <button type="button">Log out</button>
-        </div>
+        <Wrapper>
+            <WrappName>
+                <IconUser width={24} height={24}>
+                    <use href={`${sprite}#icon-user`} />
+                </IconUser>
+                <Name>{name}</Name>
+            </WrappName>
+            <Btn type="button">Log out</Btn>
+        </Wrapper>
     )
 }
