@@ -42,3 +42,4 @@ letter-spacing: -0.01em;
 background-color: var(--background-color);
 color: #fbfbfb;
 `;
+

@@ -1,8 +1,8 @@
 import { FC } from "react"
 import { Header } from "../../components/Header/Header"
-import { IHeaderBgColor } from "../../helpers/interface"
 
-export const Nannies: FC<IHeaderBgColor> = () => {
+
+export const Nannies: FC = () => {
   return (
     <div>
       <Header $backgroundColor="var(--background-color)" />
