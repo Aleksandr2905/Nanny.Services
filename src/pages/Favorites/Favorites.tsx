@@ -5,7 +5,7 @@ import { IHeaderBgColor } from "../../helpers/interface"
 export const Favorites: FC<IHeaderBgColor> = () => {
   return (
     <div>
-      <Header backgroundColor="var(--background-color)" />
+      <Header $backgroundColor="var(--background-color)" />
       Favorites
     </div>
   )

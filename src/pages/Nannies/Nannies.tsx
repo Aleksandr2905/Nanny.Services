@@ -5,7 +5,7 @@ import { IHeaderBgColor } from "../../helpers/interface"
 export const Nannies: FC<IHeaderBgColor> = () => {
   return (
     <div>
-      <Header backgroundColor="var(--background-color)" />
+      <Header $backgroundColor="var(--background-color)" />
       Nannies
     </div>
   )

@@ -6,10 +6,10 @@ import { FC } from "react";
 
 
 
-export const Header: FC<IHeaderBgColor> = ({ backgroundColor }) => {
+export const Header: FC<IHeaderBgColor> = ({ $backgroundColor }) => {
     const isLoggedIn = true;
     return (
-        <Wrapper $backgroundColor={backgroundColor}>
+        <Wrapper $backgroundColor={$backgroundColor}>
             <Logo>Nanny.Services</Logo>
             <NavMenu>
                 <NavBtn to="/"> Home</NavBtn>

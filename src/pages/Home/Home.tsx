@@ -8,7 +8,7 @@ export const Home: FC<IHeaderBgColor> = () => {
   return (
     <Container  >
       <Wrapper>
-        <Header $backgroundColor="green" />
+        <Header $backgroundColor="transparent" />
         Home
       </Wrapper>
     </Container>
