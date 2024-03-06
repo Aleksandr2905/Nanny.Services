@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div<{$backgroundColor: string}>`
 display: flex;
+position: fixed;
 justify-content: space-between;
 align-items: center;
 padding: 0 96px;
+width: 100%;
 height: 88px;
 border-bottom: 1px solid rgba(251, 251, 251, 0.4);
 background-color: ${(props) => props.$backgroundColor || "transparent"};

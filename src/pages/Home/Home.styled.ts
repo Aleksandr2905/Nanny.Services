@@ -4,10 +4,16 @@ import image from "../../assets/image/bg.jpg"
 export const Container = styled.div`
 padding: 32px;
 height: 100vh;
+/* width: 100vw; */
+position: relative;
 `;
 
 export const Wrapper = styled.div`
-height: 100%;
+position: relative;
+display: flex;
+justify-content: space-between;
+/* min-height: calc(100vh - 56px); */
+min-height: 100%;
 border-radius: 30px;
 background-color: var(--background-color);
 `;
@@ -16,7 +22,7 @@ export const TitleWrap = styled.div`
 /* display: flex;
 flex-direction: column; */
 max-width: 517px;
-/* margin: auto; */
+margin: auto;
 `;
 
 export const Title = styled.h1`
@@ -73,4 +79,45 @@ export const ImageBlock = styled.div`
   border-radius: 0 30px 30px 0;
   width: 50%;
   min-height: 100%;
+`;
+
+export const InfoBlock = styled.div`
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 284px;
+    height: 118px;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: #fbfbfb;
+`;
+
+export const IconWrap = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 13px;
+    background: var(--background-color);
+`;
+
+
+export const InfoBlockText = styled.p`
+margin-bottom: 6px;
+color: var(--color-text-grey);
+font-size: 16px;
+line-height: normal;
+letter-spacing: -0.3px;
+`;
+
+export const InfoBlockNumber = styled.p`
+color: var(--color-text-black);
+font-size: 24px;
+font-weight: 700;
+line-height: normal;
 `;

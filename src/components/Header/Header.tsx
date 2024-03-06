@@ -7,7 +7,7 @@ import { FC } from "react";
 
 
 export const Header: FC<IHeaderBgColor> = ({ $backgroundColor }) => {
-    const isLoggedIn = true;
+    const isLoggedIn = false;
     return (
         <Wrapper $backgroundColor={$backgroundColor}>
             <Logo>Nanny.Services</Logo>

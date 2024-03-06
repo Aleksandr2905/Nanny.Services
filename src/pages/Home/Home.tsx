@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Header } from "../../components/Header/Header"
-import { Btn, Container, IconArrow, Text, Title, TitleWrap, Wrapper } from "./Home.styled"
+import { Btn, Container, IconArrow, IconWrap, ImageBlock, InfoBlock, InfoBlockNumber, InfoBlockText, Text, Title, TitleWrap, Wrapper } from "./Home.styled"
 import sprite from "../../assets/icons/sprite.svg"
 import { useNavigate } from "react-router-dom"
 
@@ -20,7 +20,19 @@ export const Home: FC = () => {
             </IconArrow>
           </Btn>
         </TitleWrap>
-        {/* <ImageBlock></ImageBlock> */}
+        <ImageBlock>
+          <InfoBlock>
+            <IconWrap>
+              <IconArrow width={30} height={30}>
+                <use href={`${sprite}#icon-check`} />
+              </IconArrow>
+            </IconWrap>
+            <div>
+              <InfoBlockText>Experienced nannies</InfoBlockText>
+              <InfoBlockNumber>15,000</InfoBlockNumber>
+            </div>
+          </InfoBlock>
+        </ImageBlock>
       </Wrapper>
     </Container>
   )

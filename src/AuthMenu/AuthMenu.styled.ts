@@ -16,13 +16,20 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.25;
 letter-spacing: -0.01em;
+transition: all 0.3s;
 color: #fbfbfb;
+
+&:hover{
+   background-color: #fbfbfb; 
+   color: var(--background-color);
+   
+}
 `;
 
 export const LoginBtn = styled(Btn)`
-    background-color: transparent;
+background-color: transparent;
 `;
 
 export const RegistrationBtn = styled(Btn)`
-    background-color: var(--background-color);
+background-color: var(--background-color);
 `;
