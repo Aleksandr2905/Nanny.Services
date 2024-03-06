@@ -109,15 +109,15 @@ export const IconWrap = styled.div`
 
 export const InfoBlockText = styled.p`
 margin-bottom: 6px;
-color: var(--color-text-grey);
 font-size: 16px;
 line-height: normal;
 letter-spacing: -0.3px;
+color: rgba(17, 16, 28, 0.5);
 `;
 
 export const InfoBlockNumber = styled.p`
-color: var(--color-text-black);
 font-size: 24px;
 font-weight: 700;
 line-height: normal;
+color: #11101c;
 `;
