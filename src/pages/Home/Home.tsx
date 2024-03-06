@@ -20,6 +20,7 @@ export const Home: FC = () => {
             </IconArrow>
           </Btn>
         </TitleWrap>
+        {/* <ImageBlock></ImageBlock> */}
       </Wrapper>
     </Container>
   )

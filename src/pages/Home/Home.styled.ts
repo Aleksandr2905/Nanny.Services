@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import image from "../../assets/image/bg.jpg"
 
 export const Container = styled.div`
 padding: 32px;
@@ -61,4 +62,15 @@ color: #fbfbfb;
 
 export const IconArrow = styled.svg`
 fill: #fbfbfb;
+`;
+
+export const ImageBlock = styled.div`
+  /* position: relative; */
+  background-image: url(${image});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 30px 30px 0;
+  width: 50%;
+  min-height: 100%;
 `;
