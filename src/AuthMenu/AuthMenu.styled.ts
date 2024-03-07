@@ -21,9 +21,13 @@ color: #fbfbfb;
 
 &:hover{
    background-color: #fbfbfb; 
-   color: var(--background-color);
-   
+   color: var(--background-color);   
 }
+
+/* &:focus {
+   border: 1px solid rgba(251, 251, 251, 0.4);
+   outline: none;
+} */
 `;
 
 export const LoginBtn = styled(Btn)`

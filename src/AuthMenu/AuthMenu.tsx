@@ -1,10 +1,37 @@
+import { useState } from "react";
+import { Modal } from "../components/Modal/Modal";
 import { LoginBtn, RegistrationBtn, Wrapper } from "./AuthMenu.styled"
 
 export const AuthMenu = () => {
+    const [modalIsOpenRegister, setModalIsOpenRegister] = useState(false);
+    const [modalIsOpenLogIn, setModalIsOpenLogIn] = useState(false);
+
+    const openModalRegister = () => {
+        setModalIsOpenRegister(true);
+    };
+
+    const closeModalRegister = () => {
+        setModalIsOpenRegister(false);
+    };
+
+    const openModalLogIn = () => {
+        setModalIsOpenLogIn(true);
+    };
+
+    const closeModalLogIn = () => {
+        setModalIsOpenLogIn(false);
+    };
+
     return (
         <Wrapper>
-            <LoginBtn type="button">Log In</LoginBtn>
-            <RegistrationBtn type="button">Registration</RegistrationBtn>
+            <LoginBtn type="button" onClick={openModalLogIn}>Log In</LoginBtn>
+            <RegistrationBtn type="button" onClick={openModalRegister}>Registration</RegistrationBtn>
+            <Modal onCloseModal={closeModalRegister} isModalOpen={modalIsOpenRegister}>
+                Registration
+            </Modal>
+            <Modal onCloseModal={closeModalLogIn} isModalOpen={modalIsOpenLogIn}>
+                Login
+            </Modal>
         </Wrapper>
     )
 }

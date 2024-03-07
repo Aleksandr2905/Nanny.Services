@@ -55,13 +55,16 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: -0.01em;
 background-color: transparent;
-
 color: #fbfbfb;
 
 &:hover {
+  transition: all 0.3s;
+  background-color: #fbfbfb;
+  color: var(--background-color);
     svg {
     transition: transform 0.3s;
     transform: rotate(53deg);
+    fill: var(--background-color);
     }
   }
 `
