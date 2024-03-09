@@ -1,5 +1,5 @@
 import { UserMenu } from "../UserMenu/UserMenu"
-import { AuthMenu } from "../../AuthMenu/AuthMenu"
+import { AuthMenu } from "../AuthMenu/AuthMenu"
 import { Logo, NavBtn, NavMenu, Wrapper } from "./Header.styled";
 import { IHeaderBgColor } from "../../helpers/interface";
 import { FC } from "react";
@@ -9,9 +9,9 @@ import { FC } from "react";
 export const Header: FC<IHeaderBgColor> = ({ $backgroundColor }) => {
     const isLoggedIn = false;
     return (
-        <Wrapper $backgroundColor={$backgroundColor}>
+        <Wrapper $backgroundColor={$backgroundColor} style={{ textAlign: isLoggedIn ? 'center' : 'right' }}>
             <Logo>Nanny.Services</Logo>
-            <NavMenu>
+            <NavMenu >
                 <NavBtn to="/"> Home</NavBtn>
                 <NavBtn to="/nannies">Nannies</NavBtn>
                 {isLoggedIn && <NavBtn to="/favorites">Favorites</NavBtn>}

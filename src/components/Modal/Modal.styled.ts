@@ -33,9 +33,9 @@ export const BtnCloseModal = styled.button`
   & svg {
     stroke: #11101c;
 
-    &:hover {
+    /* &:hover {
       transition: transform 0.5s;
       transform: rotate(90deg);
-    }
+    } */
   }
 `;
