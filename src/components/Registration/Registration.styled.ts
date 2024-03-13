@@ -97,5 +97,7 @@ export const Btn = styled.button`
 
   &:hover {
     box-shadow: 0px 4px 14px 0px rgba(17, 16, 28, 0.5);
+    color: var(--background-color);
+    background-color: #fbfbfb;
   }
 `;

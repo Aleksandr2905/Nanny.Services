@@ -3,15 +3,22 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-const API_KEY = process.env.FIREBASE_API_KEY;
+const {
+  VITE_FIREBASE_API_KEY,
+  VITE_AUTH_DOMAIN,
+  VITE_PROJECT_ID,
+  VITE_STORAGE_BUCKET,
+  VITE_MESSAGING_SENDER_ID,
+  VITE_APP_ID
+} = import.meta.env;
 
 const firebaseConfig = {
-  apiKey: API_KEY,
-  authDomain: "nanny-services-afa99.firebaseapp.com",
-  projectId: "nanny-services-afa99",
-  storageBucket: "nanny-services-afa99.appspot.com",
-  messagingSenderId: "25935499254",
-  appId: "1:25935499254:web:9875a9053af1f7fb5d41d7"
+  apiKey: VITE_FIREBASE_API_KEY,
+  authDomain: VITE_AUTH_DOMAIN,
+  projectId: VITE_PROJECT_ID,
+  storageBucket: VITE_STORAGE_BUCKET,
+  messagingSenderId: VITE_MESSAGING_SENDER_ID,
+  appId: VITE_APP_ID,
 };
 
 

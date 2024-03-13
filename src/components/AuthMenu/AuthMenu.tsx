@@ -25,15 +25,22 @@ export const AuthMenu = () => {
     };
 
     return (
-        <Wrapper>
-            <LoginBtn type="button" onClick={openModalLogIn}>Log In</LoginBtn>
-            <RegistrationBtn type="button" onClick={openModalRegister}>Registration</RegistrationBtn>
-            <Modal onCloseModal={closeModalRegister} isModalOpen={modalIsOpenRegister}>
-                <Registration />
-            </Modal>
-            <Modal onCloseModal={closeModalLogIn} isModalOpen={modalIsOpenLogIn}>
-                <Login />
-            </Modal>
-        </Wrapper>
-    )
+      <Wrapper>
+        <LoginBtn type="button" onClick={openModalLogIn}>
+          Log In
+        </LoginBtn>
+        <RegistrationBtn type="button" onClick={openModalRegister}>
+          Registration
+        </RegistrationBtn>
+        <Modal
+          onCloseModal={closeModalRegister}
+          isModalOpen={modalIsOpenRegister}
+        >
+          <Registration onCloseModal={closeModalRegister} />
+        </Modal>
+        <Modal onCloseModal={closeModalLogIn} isModalOpen={modalIsOpenLogIn}>
+          <Login />
+        </Modal>
+      </Wrapper>
+    );
 }
